@@ -19,5 +19,20 @@ def solution(dirs):
     return len(result)
 
 
+def solution2(dirs):
+    x, y = 0, 0
+    direction = {'U': (0, 1), 'D': (0, -1), 'R': (1, 0), 'L': (-1, 0)}
+    answer = set()
+    for d in dirs:
+        nx, ny = x + direction[d][0], y + direction[d][1]
+        if -5 <= nx <= 5 and -5 <= ny <= 5:
+            answer.add((x, y, nx, ny))
+            answer.add((nx, ny, x, y))
+            x, y = nx, ny
+    return len(answer) // 2
+
+
 print(solution("ULURRDLLU"))
 print(solution("LULLLLLLU"))
+print(solution2("ULURRDLLU"))
+print(solution2("LULLLLLLU"))
