@@ -13,7 +13,7 @@ def solution(rows, columns, queries):
     for query in queries:
         start_row, start_col, end_row, end_col = query
         x, y = start_row - 1, start_col - 1
-        coordinate.append([x, y])
+        # coordinate.append([x, y])
         value.append(matrix[x][y])
         for _ in range(end_col - start_col):
             y = y + 1
@@ -31,7 +31,7 @@ def solution(rows, columns, queries):
             x = x - 1
             coordinate.append([x, y])
             value.append(matrix[x][y])
-        coordinate.pop(0)
+        # coordinate.pop(0)
         value.pop()
         for i in range(len(value)):
             matrix[coordinate[i][0]][coordinate[i][1]] = value[i]
