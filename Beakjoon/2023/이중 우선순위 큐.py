@@ -10,14 +10,14 @@ for _ in range(t):
     heap_min, heap_max = [], []
     count = 0
     for _ in range(n):
-        commend, number = map(str, input().split())
+        command, number = map(str, input().split())
         number = int(number)
-        if commend == "I":
+        if command == "I":
             dic[number] = dic[number] + 1
             count = count + 1
             heapq.heappush(heap_min, number)
             heapq.heappush(heap_max, -number)
-        elif commend == "D":
+        elif command == "D":
             if count == 0:
                 continue
             count = count - 1
