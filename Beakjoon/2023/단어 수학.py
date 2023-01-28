@@ -12,7 +12,7 @@ dic = defaultdict(int)
 for word in words:
     for index, alphabet in enumerate(word):
         dic[alphabet] = dic[alphabet] + 10 ** (len(word) - 1 - index)
-# value 기준 정렬
+# value 기준 내림차순 정렬
 alpha_sort = sorted(dic.items(), key=lambda x: x[1], reverse=True)
 
 result, number = 0, 9
