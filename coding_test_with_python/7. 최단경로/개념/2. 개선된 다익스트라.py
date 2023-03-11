@@ -9,7 +9,6 @@ start = int(input())
 
 # 연결리스트, 방문체크, 최단거리 테이블
 graph = [[] for i in range(n + 1)]
-visited = [False] * (n + 1)
 distance = [INF] * (n + 1)
 
 # 모든 간선정보를 입력받기(a에서 b로 가는 비용이 c다)
