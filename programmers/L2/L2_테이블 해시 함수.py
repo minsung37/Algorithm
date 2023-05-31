@@ -1,3 +1,5 @@
+# 테이블 해시 함수
+# https://school.programmers.co.kr/learn/courses/30/lessons/147354
 def solution(data, col, row_begin, row_end):
     answer = 0
     # col 번째 값기준 오른차순 같으면 첫번째 기준 내림차순
