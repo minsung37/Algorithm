@@ -5,14 +5,6 @@ from collections import defaultdict
 
 def solution(nodeinfo):
     answer = [[]]
-    nodeinfo.sort(key=lambda x: (-x[1], x[0]))
-    dic = defaultdict([0, 0])
-    parent = 0
-    child = []
-    for x, y in range(nodeinfo):
-        if parent == 0:
-            parent = x
-
     return answer
 
 
