@@ -4,7 +4,6 @@ import copy
 import sys
 input = sys.stdin.readline
 
-
 n = int(input())
 board = [list(input().split()) for _ in range(n)]
 dx, dy = [1, 0, -1, 0], [0, 1, 0, -1]
